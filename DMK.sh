@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ -e /root ]
 then
     if [ -f /root/.ssh/authorized_keys ]
