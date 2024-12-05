@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -e /root ]; then
-    if [ $( /root/.ssh/authorized_keys | wc -l) == 0 ]; then
+    if [ $( /bin/grep /root/.ssh/authorized_keys | wc -l) == 0 ]; then
         echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgEA5SpCVKVBrwIvYkOO6cfJah06o4b8BiXNQ8I9
 3l6OBeZlnyOEVERu1b+klKorTLwD7FML2+iRHj9XDWh4is3TEO1SmRIlpmnybaKV
 FhJhDJ4Gcz8iBs0bWpBGbbwqL0RTiBaHtDHkKiTtooILBWSaUN+w3vrvLtpsLs2g
